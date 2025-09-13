@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="weather.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="company-logo" class="sun-logo" />
+          <h1 class="company-name">Weather Now</h1>
+        </div>
+
+        <button class="unit-selector">
+          <img src="./images/all-icons/settings-icon.svg" class="unit-icon" />
+          <span>Units</span>
+          <img src="./images/all-icons/dropdown-icon.svg" class="unit-icon" />
+        </button>
+      </nav>
+    </header>
+    <main>
+      <h1 class="greeting">How's the sky looking today?</h1>
+      <div class="search-area">
+        <div class="input-area">
+          <img src="./images/all-icons/search.svg" class="search" />
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search for a location..."
+          />
+        </div>
+        <button>Search</button>
+      </div>
+
+      <section class="weather-details">
+        <div class="background">
+        <div class="weather-image">
+          <p class="city">Berlin, Germany</p>
+          <span class="date">Tuesday, August 10, 2025</span>
+
+          <div class="sun-and-degrees">
+            <img
+              src="./images/icon-sunny.webp"
+              alt="sunny weather icon"
+              class="sun-icon"
+            />
+            <span class="celcius">20&deg;</span>
+          </div>
+        </div></div>
+
+        <div class="container">
+          <div class="card">Feels Like <span class="forecast">18°</span></div>
+<div class="card">Humidity <span class="forecast">46%</span></div>
+<div class="card">Wind <span class="forecast">14 km/h</span></div>
+<div class="card">Precipitation <span class="forecast">0mm</span></div>
+        </div>
+
+                <div class="dailies">
+
+        <h2>Daily forecast</h2>
+        <div class="weather-week">
+
+        <div class="weather-card">
+            <div class="day">Mon</div>
+           <img src="./images/icon-drizzle.webp" alt="Drizzle" class="main-weather-icons">
+            <div class="temps">
+                <span class="high">25°</span>
+                <span class="low">18°</span>
+            </div>
+        </div>
+        
+        <div class="weather-card">
+            <div class="day">Tue</div>
+            <img src="/images/icon-partly-cloudy.webp" alt="Partly cloudy" class="main-weather-icons">
+            <div class="temps">
+                <span class="high">20°</span>
+                <span class="low">14°</span>
+            </div>
+        </div>
+        
+        <div class="weather-card">
+            <div class="day">Wed</div>
+           <img src="./images/icon-storm.webp" alt="Storm" class="main-weather-icons">
+            <div class="temps">
+                <span class="high">22°</span>
+                <span class="low">16°</span>
+            </div>
+        </div>
+        
+        <div class="weather-card">
+            <div class="day">Thu</div>
+         <img src="./images/icon-sunny.webp" alt="Sunny" class="main-weather-icons">
+            <div class="temps">
+                <span class="high">24°</span>
+                <span class="low">17°</span>
+            </div>
+        </div>
+        
+        <div class="weather-card">
+            <div class="day">Fri</div>
+          <img src="./images/icon-snow.webp" alt="Snow" class="main-weather-icons">
+            <div class="temps">
+                <span class="high">19°</span>
+                <span class="low">12°</span>
+            </div>
+        </div>
+        
+        <div class="weather-card">
+            <div class="day">Sat</div>
+           <img src="/images/icon-rain.webp" alt="Rain" class="main-weather-icons">
+            <div class="temps">
+                <span class="high">21°</span>
+                <span class="low">15°</span>
+            </div>
+        </div>
+        
+        <div class="weather-card">
+            <div class="day">Sun</div>
+           <img src="./images/icon-fog.webp" alt="Fog" class="main-weather-icons">
+            <div class="temps">
+                <span class="high">26°</span>
+                <span class="low">19°</span>
+            </div>
+        </div>
+    </div>
+      </div>
+      </section>
+    </main>
+  </body>
+</html>
