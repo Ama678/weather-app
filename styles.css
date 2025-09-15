@@ -241,11 +241,14 @@ h2 {
 
 .day {
   text-align: center;
+  color: var(--Neutral-0);
 }
 
 .temps {
   display: flex;
   justify-content: space-between;
+    color: var(--Neutral-0);
+
 }
 
 .main-weather-icons {
