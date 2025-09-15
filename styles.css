@@ -248,6 +248,7 @@ h2 {
   display: flex;
   justify-content: space-between;
     color: var(--Neutral-0);
+    align-items: center;
 
 }
 
