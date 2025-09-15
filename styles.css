@@ -36,8 +36,7 @@ h6 {
 
 p {
   line-height: 1.6;
-      color: var(--Neutral-0);
-
+  color: var(--Neutral-0);
 }
 
 nav {
@@ -131,7 +130,7 @@ main {
   height: 1.125rem;
 }
 
-.search-button{
+.search-button {
   padding: 0.5625rem 1.25rem 0.5625rem 1.25rem;
   border-radius: 6px;
   border: none;
@@ -154,12 +153,10 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
 }
 
 .background {
   width: 100%;
-
 }
 
 .date {
@@ -207,8 +204,7 @@ main {
   border: none;
   background-color: var(--Neutral-600);
   padding: 1rem;
-   color: var(--Neutral-0);
-
+  color: var(--Neutral-0);
 }
 
 .forecast {
@@ -236,7 +232,7 @@ h2 {
   border: none;
   display: flex;
   flex-direction: column;
-
+  color: var(--Neutral-0);
   min-width: 80px;
   min-height: 150px;
   padding: 1rem;
@@ -273,18 +269,15 @@ h2 {
   gap: 0.75rem;
 }
 
-.day-checker{
- padding: 0.75rem 1rem;
-   border: none;
+.day-checker {
+  padding: 0.75rem 1rem;
+  border: none;
   border-radius: 6px;
-  background-color: var(--Neutral-600);
   display: flex;
   align-items: center;
   gap: 8px;
-    color: var(--Neutral-0);
-
-
-
+  color: var(--Neutral-0);
+  background-color: var(--Neutral-700);
 }
 
 .weather-and-day {
