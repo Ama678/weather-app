@@ -17,49 +17,74 @@
   <body>
     <header>
       <nav>
-        <div class="logo">
-          <img src="./images/logo.svg" alt="company-logo" class="sun-logo" />
-          <h1 class="company-name">Weather Now</h1>
-        </div>
+        <a href="/" class="logo" aria-label="Weather Now homepage">
+          <img
+            src="./images/logo.svg"
+            alt="Weather Now logo"
+            class="sun-logo"
+          />
+          <span class="company-name">Weather Now</span>
+        </a>
 
         <button class="unit-selector">
-          <img src="./images/all-icons/settings-icon.svg" class="unit-icon" />
+          <img
+            src="./images/all-icons/settings-icon.svg"
+            class="unit-icon"
+            alt="settings"
+            aria-label="Change temperature units"
+          />
           <span>Units</span>
-          <img src="./images/all-icons/dropdown-icon.svg" class="unit-icon" />
+          <img
+            src="./images/all-icons/dropdown-icon.svg"
+            class="unit-icon"
+            alt="dropdown"
+          />
         </button>
       </nav>
     </header>
     <main>
       <div class="first-half">
         <h1 class="greeting">How's the sky looking today?</h1>
-        <div class="search-area">
-          <div class="input-area">
-            <img src="./images/all-icons/search.svg" class="search" />
-            <input
-              type="search"
-              id="search-input"
-              placeholder="Search for a location..."
-            />
-          </div>
-          <button class="search-button">Search</button>
-        </div>
 
-        <section class="weather-details">
-          <div class="background">
-            <div class="weather-image">
+     <form class="search-area" role="search">
+  <div class="search-wrapper">
+    <div class="input-area">
+      <label for="search-input" class="visually-hidden">Search for a location</label>
+      <img
+        src="./images/all-icons/search.svg"
+        class="search"
+        alt=""
+        aria-hidden="true"
+      />
+      <input
+        type="search"
+        id="search-input"
+        placeholder="Search for a location..."
+      />
+    </div>
+    <button class="search-button" type="submit">Search</button>
+  </div>
+</form>
+
+
+        <section
+          class="weather-details"
+          aria-label="Current weather conditions"
+        >
+            <div class="weather-image"           aria-label="Weather conditions per location"
+>
               <p class="city">Berlin, Germany</p>
               <span class="date">Tuesday, August 10, 2025</span>
 
               <div class="sun-and-degrees">
                 <img
                   src="./images/icon-sunny.webp"
-                  alt="sunny weather icon"
+                  alt="sunny"
                   class="sun-icon"
                 />
-                <p class="celcius">20&deg;</p>
+                <p class="celsius">20&deg;</p>
               </div>
             </div>
-          </div>
 
           <div class="container">
             <div class="card">Feels Like <span class="forecast">18°</span></div>
@@ -142,7 +167,7 @@
                 <p class="day">Sat</p>
                 <img
                   src="./images/icon-sunny.webp"
-                  alt="Rain"
+                  alt="sunny"
                   class="main-weather-icons"
                 />
                 <div class="temps">
@@ -171,14 +196,22 @@
       <section class="hourly-forecast">
         <div class="hourly-forecast-container">
           <div class="weather-and-day">
-            <h3>Hourly forecast</h3>
-            <button class="day-checker">Tuesday
-              <img src="./images/all-icons/dropdown-icon.svg" class="unit-icon">
+            <h2>Hourly forecast</h2>
+            <button
+              class="day-checker"
+              type="button"
+              aria-label="Select day for current weather conditions"
+            >
+              Tuesday
+              <img
+                src="./images/all-icons/dropdown-icon.svg"
+                class="unit-icon"
+              />
             </button>
           </div>
           <div class="grouped-details">
             <div class="weather-and-pm">
-              <img src="./images/icon-storm.webp" class="small-weather-icon" />
+              <img src="./images/icon-storm.webp"  alt="storm"  class="small-weather-icon" />
               <p>3 PM</p>
             </div>
             <p>20&deg;</p>
@@ -186,7 +219,10 @@
 
           <div class="grouped-details">
             <div class="weather-and-pm">
-              <img src="./images/icon-drizzle.webp" class="small-weather-icon" />
+              <img
+                src="./images/icon-drizzle.webp" alt="drizzle"
+                class="small-weather-icon"
+              />
               <p>4 PM</p>
             </div>
             <p>12&deg;</p>
@@ -194,7 +230,7 @@
 
           <div class="grouped-details">
             <div class="weather-and-pm">
-              <img src="./images/icon-fog.webp" class="small-weather-icon"/>
+              <img src="./images/icon-fog.webp"  alt="fog"   class="small-weather-icon" />
               <p>5 PM</p>
             </div>
             <p>16&deg;</p>
@@ -202,7 +238,7 @@
 
           <div class="grouped-details">
             <div class="weather-and-pm">
-              <img src="./images/icon-sunny.webp" class="small-weather-icon"/>
+              <img src="./images/icon-sunny.webp"  alt="sunny"  class="small-weather-icon" />
               <p>6 PM</p>
             </div>
             <p>20&deg;</p>
@@ -210,7 +246,10 @@
 
           <div class="grouped-details">
             <div class="weather-and-pm">
-              <img src="./images/icon-partly-cloudy.webp" class="small-weather-icon"/>
+              <img
+                src="./images/icon-partly-cloudy.webp" alt="partly cloudy"
+                class="small-weather-icon"
+              />
               <p>7 PM</p>
             </div>
             <p>12&deg;</p>
@@ -218,7 +257,7 @@
 
           <div class="grouped-details">
             <div class="weather-and-pm">
-              <img src="./images/icon-snow.webp" class="small-weather-icon"/>
+              <img src="./images/icon-snow.webp"   alt="snow" class="small-weather-icon" />
               <p>8 PM</p>
             </div>
             <p>15&deg;</p>
@@ -226,7 +265,7 @@
 
           <div class="grouped-details">
             <div class="weather-and-pm">
-              <img src="./images/icon-rain.webp" class="small-weather-icon"/>
+              <img src="./images/icon-rain.webp" alt="rain"  class="small-weather-icon" />
               <p>9 PM</p>
             </div>
             <p>12&deg;</p>
@@ -234,7 +273,7 @@
 
           <div class="grouped-details">
             <div class="weather-and-pm">
-              <img src="./images/icon-sunny.webp" class="small-weather-icon"/>
+              <img src="./images/icon-sunny.webp"  alt="sunny" class="small-weather-icon" />
               <p>10 PM</p>
             </div>
             <p>11&deg;</p>
