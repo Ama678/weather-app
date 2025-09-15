@@ -30,111 +30,216 @@
       </nav>
     </header>
     <main>
-      <h1 class="greeting">How's the sky looking today?</h1>
-      <div class="search-area">
-        <div class="input-area">
-          <img src="./images/all-icons/search.svg" class="search" />
-          <input
-            type="search"
-            id="search-input"
-            placeholder="Search for a location..."
-          />
-        </div>
-        <button>Search</button>
-      </div>
-
-      <section class="weather-details">
-        <div class="background">
-        <div class="weather-image">
-          <p class="city">Berlin, Germany</p>
-          <span class="date">Tuesday, August 10, 2025</span>
-
-          <div class="sun-and-degrees">
-            <img
-              src="./images/icon-sunny.webp"
-              alt="sunny weather icon"
-              class="sun-icon"
+      <div class="first-half">
+        <h1 class="greeting">How's the sky looking today?</h1>
+        <div class="search-area">
+          <div class="input-area">
+            <img src="./images/all-icons/search.svg" class="search" />
+            <input
+              type="search"
+              id="search-input"
+              placeholder="Search for a location..."
             />
-            <span class="celcius">20&deg;</span>
           </div>
-        </div></div>
-
-        <div class="container">
-          <div class="card">Feels Like <span class="forecast">18°</span></div>
-<div class="card">Humidity <span class="forecast">46%</span></div>
-<div class="card">Wind <span class="forecast">14 km/h</span></div>
-<div class="card">Precipitation <span class="forecast">0mm</span></div>
+          <button class="search-button">Search</button>
         </div>
 
-                <div class="dailies">
+        <section class="weather-details">
+          <div class="background">
+            <div class="weather-image">
+              <p class="city">Berlin, Germany</p>
+              <span class="date">Tuesday, August 10, 2025</span>
 
-        <h2>Daily forecast</h2>
-        <div class="weather-week">
+              <div class="sun-and-degrees">
+                <img
+                  src="./images/icon-sunny.webp"
+                  alt="sunny weather icon"
+                  class="sun-icon"
+                />
+                <span class="celcius">20&deg;</span>
+              </div>
+            </div>
+          </div>
 
-        <div class="weather-card">
-            <div class="day">Mon</div>
-           <img src="./images/icon-drizzle.webp" alt="Drizzle" class="main-weather-icons">
-            <div class="temps">
-                <span class="high">25°</span>
-                <span class="low">18°</span>
+          <div class="container">
+            <div class="card">Feels Like <span class="forecast">18°</span></div>
+            <div class="card">Humidity <span class="forecast">46%</span></div>
+            <div class="card">Wind <span class="forecast">14 km/h</span></div>
+            <div class="card">
+              Precipitation <span class="forecast">0mm</span>
             </div>
-        </div>
-        
-        <div class="weather-card">
-            <div class="day">Tue</div>
-            <img src="/images/icon-partly-cloudy.webp" alt="Partly cloudy" class="main-weather-icons">
-            <div class="temps">
-                <span class="high">20°</span>
-                <span class="low">14°</span>
+          </div>
+
+          <div class="dailies">
+            <h2>Daily forecast</h2>
+            <div class="weather-week">
+              <div class="weather-card">
+                <div class="day">Mon</div>
+                <img
+                  src="./images/icon-drizzle.webp"
+                  alt="Drizzle"
+                  class="main-weather-icons"
+                />
+                <div class="temps">
+                  <span class="high">25°</span>
+                  <span class="low">18°</span>
+                </div>
+              </div>
+
+              <div class="weather-card">
+                <div class="day">Tue</div>
+                <img
+                  src="/images/icon-partly-cloudy.webp"
+                  alt="Partly cloudy"
+                  class="main-weather-icons"
+                />
+                <div class="temps">
+                  <span class="high">20°</span>
+                  <span class="low">14°</span>
+                </div>
+              </div>
+
+              <div class="weather-card">
+                <div class="day">Wed</div>
+                <img
+                  src="./images/icon-storm.webp"
+                  alt="Storm"
+                  class="main-weather-icons"
+                />
+                <div class="temps">
+                  <span class="high">22°</span>
+                  <span class="low">16°</span>
+                </div>
+              </div>
+
+              <div class="weather-card">
+                <div class="day">Thu</div>
+                <img
+                  src="./images/icon-sunny.webp"
+                  alt="Sunny"
+                  class="main-weather-icons"
+                />
+                <div class="temps">
+                  <span class="high">24°</span>
+                  <span class="low">17°</span>
+                </div>
+              </div>
+
+              <div class="weather-card">
+                <div class="day">Fri</div>
+                <img
+                  src="./images/icon-snow.webp"
+                  alt="Snow"
+                  class="main-weather-icons"
+                />
+                <div class="temps">
+                  <span class="high">19°</span>
+                  <span class="low">12°</span>
+                </div>
+              </div>
+
+              <div class="weather-card">
+                <div class="day">Sat</div>
+                <img
+                  src="/images/icon-rain.webp"
+                  alt="Rain"
+                  class="main-weather-icons"
+                />
+                <div class="temps">
+                  <span class="high">21°</span>
+                  <span class="low">15°</span>
+                </div>
+              </div>
+
+              <div class="weather-card">
+                <div class="day">Sun</div>
+                <img
+                  src="./images/icon-fog.webp"
+                  alt="Fog"
+                  class="main-weather-icons"
+                />
+                <div class="temps">
+                  <span class="high">26°</span>
+                  <span class="low">19°</span>
+                </div>
+              </div>
             </div>
-        </div>
-        
-        <div class="weather-card">
-            <div class="day">Wed</div>
-           <img src="./images/icon-storm.webp" alt="Storm" class="main-weather-icons">
-            <div class="temps">
-                <span class="high">22°</span>
-                <span class="low">16°</span>
-            </div>
-        </div>
-        
-        <div class="weather-card">
-            <div class="day">Thu</div>
-         <img src="./images/icon-sunny.webp" alt="Sunny" class="main-weather-icons">
-            <div class="temps">
-                <span class="high">24°</span>
-                <span class="low">17°</span>
-            </div>
-        </div>
-        
-        <div class="weather-card">
-            <div class="day">Fri</div>
-          <img src="./images/icon-snow.webp" alt="Snow" class="main-weather-icons">
-            <div class="temps">
-                <span class="high">19°</span>
-                <span class="low">12°</span>
-            </div>
-        </div>
-        
-        <div class="weather-card">
-            <div class="day">Sat</div>
-           <img src="/images/icon-rain.webp" alt="Rain" class="main-weather-icons">
-            <div class="temps">
-                <span class="high">21°</span>
-                <span class="low">15°</span>
-            </div>
-        </div>
-        
-        <div class="weather-card">
-            <div class="day">Sun</div>
-           <img src="./images/icon-fog.webp" alt="Fog" class="main-weather-icons">
-            <div class="temps">
-                <span class="high">26°</span>
-                <span class="low">19°</span>
-            </div>
-        </div>
-    </div>
+          </div>
+        </section>
       </div>
+
+      <section class="hourly-forecast">
+        <div class="hourly-forecast-container">
+          <div class="weather-and-day">
+            <h3>Hourly forecast</h3>
+            <button class="day-checker">Tuesday
+              <img src="./images/all-icons/dropdown-icon.svg" class="unit-icon">
+            </button>
+          </div>
+          <div class="grouped-details">
+            <div class="weather-and-pm">
+              <img src="./images/icon-storm.webp" class="small-weather-icon" />
+              <p>3 PM</p>
+            </div>
+            <p>20&deg;</p>
+          </div>
+
+          <div class="grouped-details">
+            <div class="weather-and-pm">
+              <img src="./images/icon-drizzle.webp" class="small-weather-icon" />
+              <p>4 PM</p>
+            </div>
+            <p>12&deg;</p>
+          </div>
+
+          <div class="grouped-details">
+            <div class="weather-and-pm">
+              <img src="./images/icon-fog.webp" class="small-weather-icon"/>
+              <p>5 PM</p>
+            </div>
+            <p>16&deg;</p>
+          </div>
+
+          <div class="grouped-details">
+            <div class="weather-and-pm">
+              <img src="./images/icon-sunny.webp" class="small-weather-icon"/>
+              <p>6 PM</p>
+            </div>
+            <p>20&deg;</p>
+          </div>
+
+          <div class="grouped-details">
+            <div class="weather-and-pm">
+              <img src="./images/icon-partly-cloudy.webp" class="small-weather-icon"/>
+              <p>7 PM</p>
+            </div>
+            <p>12&deg;</p>
+          </div>
+
+          <div class="grouped-details">
+            <div class="weather-and-pm">
+              <img src="./images/icon-snow.webp" class="small-weather-icon"/>
+              <p>8 PM</p>
+            </div>
+            <p>15&deg;</p>
+          </div>
+
+          <div class="grouped-details">
+            <div class="weather-and-pm">
+              <img src="./images/icon-rain.webp" class="small-weather-icon"/>
+              <p>9 PM</p>
+            </div>
+            <p>12&deg;</p>
+          </div>
+
+          <div class="grouped-details">
+            <div class="weather-and-pm">
+              <img src="./images/icon-sunny.webp" class="small-weather-icon"/>
+              <p>10 PM</p>
+            </div>
+            <p>11&deg;</p>
+          </div>
+        </div>
       </section>
     </main>
   </body>
