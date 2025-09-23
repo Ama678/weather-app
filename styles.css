@@ -117,7 +117,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-width: 100%;}
+min-width: 100%;}
 
 .input-area {
   display: flex;
@@ -191,6 +191,8 @@ width: 100%;}
     width: 100%;
 
 }
+
+
 
 
 
@@ -297,10 +299,11 @@ h2 {
 
 .hourly-forecast {
   margin-top: 1rem;
+    flex: 1;
+
 }
 
 .hourly-forecast-container {
-  flex: 1;
   background-color: var(--Neutral-600);
   border: none;
   border-radius: 12px;
@@ -377,4 +380,52 @@ h2 {
   .day-checker {
     transition: background-color 0.2s ease;
   }
+}
+
+@media (min-width: 1024px) {
+  .company-name {
+    font-size: 1.25rem;
+  }
+
+  .sun-logo {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .logo {
+    gap: 0.75rem;
+  }
+
+  main {
+    padding-left: 9.375rem;
+    padding-right: 9.375rem;
+    display: flex;
+  }
+
+  .greeting {
+    font-size: 2.5rem;
+  }
+
+ .weather-week {
+  display: grid;
+ grid-auto-flow: row
+}
+
+
+ 
+
+  .search-button {
+    width: auto; 
+    padding: 16px 32px; 
+  }
+
+  .hourly-forecast {
+  margin-top: 2rem;
+}
+
+.first-half { width: 80%;
+  
+
+}
+
 }
